@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MoviehiveApp" customModuleProvider="target">
+            <connections>
+                <outlet property="nowPlayingCollectionView" destination="znf-mL-Kf8" id="PKH-Px-oEC"/>
+                <outlet property="pageControl" destination="Yat-zs-lfu" id="ZGa-TC-GzO"/>
+                <outlet property="upcomingCollectionView" destination="tdf-ad-daE" id="52q-gX-8pB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="znf-mL-Kf8" userLabel="slider">
+                    <rect key="frame" x="0.0" y="44" width="414" height="224"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fgz-br-Dxa">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Yat-zs-lfu">
+                    <rect key="frame" x="129.5" y="242" width="155.5" height="26"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pageControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tdf-ad-daE">
+                    <rect key="frame" x="0.0" y="268" width="414" height="594"/>
+                    <color key="backgroundColor" name="CustomDarkBlue"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nE2-x2-c6U">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="CustomDarkBlue"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tdf-ad-daE" secondAttribute="trailing" id="47Q-br-sxF"/>
+                <constraint firstItem="znf-mL-Kf8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8Sz-v7-MKQ"/>
+                <constraint firstItem="tdf-ad-daE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B6U-hg-Aey"/>
+                <constraint firstItem="tdf-ad-daE" firstAttribute="top" secondItem="znf-mL-Kf8" secondAttribute="bottom" id="D31-jN-Ckh"/>
+                <constraint firstItem="Yat-zs-lfu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OWr-c6-IQV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="znf-mL-Kf8" secondAttribute="trailing" id="kfH-dd-wpm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tdf-ad-daE" secondAttribute="bottom" id="krM-sR-Ty6"/>
+                <constraint firstItem="znf-mL-Kf8" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="p6x-HB-0bU"/>
+                <constraint firstItem="znf-mL-Kf8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pZ3-KB-IKv"/>
+                <constraint firstItem="Yat-zs-lfu" firstAttribute="bottom" secondItem="znf-mL-Kf8" secondAttribute="bottom" id="sgb-rm-37r"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="CustomDarkBlue">
+            <color red="0.030999999493360519" green="0.125" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
