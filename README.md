@@ -12,6 +12,7 @@ An app that shows the movies in cinemas and upcoming movies and also allows you 
 
 ## Non-Functional Features
 * Supports iOS 12+
+* Used Swift 5.5
 * Written using VIPER
 * Used API from https://www.themoviedb.org
 * Used Alamofire
