@@ -11,7 +11,7 @@ An app that shows the movies in cinemas and upcoming movies and also allows you 
 * Like button in movie detail
 
 ## Non-Functional Features
-* Supports iOS 12+
+* Supports iOS 15
 * Used Swift 5.5
 * Written using VIPER
 * Used API from https://www.themoviedb.org
